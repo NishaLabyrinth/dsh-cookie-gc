@@ -1,0 +1,22 @@
+{
+  "name": "dsh-cookie-gc",
+  "version": "0.1.0",
+  "description": "自动清理 DSH 桌面版累计的 dsh-auth-* 登录 cookie：每次启动只保留当前端口那一条，防止请求头超过 16KB 后登录 431。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

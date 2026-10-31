@@ -1,0 +1,4 @@
+# dsh-cookie-gc 的 Loader 条目。
+- insert:
+    - id: dsh-cookie-gc
+      name: dsh-cookie-gc
